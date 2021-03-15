@@ -1,38 +1,54 @@
+html, body {
+  background-color: #1f1c42;
+  height: 100%;
+}
+
 .App {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: inline-flex;
+  background-color: black;
+}
+
+.infos-container {
+  background-color: white;
+  width: 67%;
+  height: 100%;
+  box-shadow: 0 0 70px white;
+}
+
+/* DRAWING SECTION */
+
+.drawings-container {
+  color : white;
+  text-align: center;
+
+  opacity: .3;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+
+  width: 100%;
+  height: 100%;
+  background: center/cover no-repeat url('./img/water.png');
+  background-size: 120%;
+  background-position-y: 12%;
+}
+
+.drawing-section-container {
+  width: 33%;
+  height: 100%;
+}
+
+.art-website {
+  position: absolute;
+  bottom: 10px;
+  width: 33%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.art-website a {
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  text-decoration: none;
+  font-size: 20px;
 }
