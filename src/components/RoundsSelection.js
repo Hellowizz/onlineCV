@@ -2,12 +2,11 @@ import React, { useState, useEffect } from 'react';
 
 const styles = {
     selected : {
-        backgroundColor: 'white'
+        backgroundColor: 'black'
     }
 };
 
 export default function RoundSelection({idSelected, changeIdSelected}) {
-
   return (
     <div>
         <div className="round" onClick={() => changeIdSelected(0)} style={idSelected === 0 ? styles.selected : null}/>

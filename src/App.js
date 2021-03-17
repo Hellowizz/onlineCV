@@ -17,7 +17,7 @@ import img8 from './img/fire.png';
 import img9 from './img/kinui.png';
 import img10 from './img/kurai.png';
 
-const tabOfImgs = [img1, img2, img3, img4, img5, img6, img7];
+const tabOfImgs = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10];
 
 function App() {
 	return (
