@@ -5,9 +5,10 @@ import './InfosSection.css';
 
 /* COMPONENT IMPORTS */
 import Rounds from './RoundsSelection.js';
+import Presentation from './Presentation.js';
 
 const diffZones = [
-  <div className="info-zone">FUYA</div>,
+  <div className="info-zone"><Presentation /></div>,
   <div className="info-zone">BIM</div>,
   <div className="info-zone">BAM</div>,
   <div className="info-zone">BOUM</div>,
@@ -61,7 +62,7 @@ export default function InfosSection() {
         ));
 
   return (
-    <div className="infos-container">
+    <div style={{ height: '100%' }}>
       <div style={{ display: 'block', height: '100%', transform: styleTransition(currentSectionId), transition: '.7s'}}>{zones}</div>
       <div className="stepper-rouds">
         <Rounds idSelected={currentSectionId} changeIdSelected={setCurrentSectionId}/>
