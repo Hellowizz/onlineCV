@@ -45,13 +45,14 @@
 	margin-top: 15px;
 	width: 7px;
 	height: 7px;
-	border: 1px solid black;
+	border: 1px solid #4A4861;
 	border-radius: 50%;
 }
 
 /* PRESENTATION PART */
 .presentation-container {
 	font-family: Cocogoose;
+	color: #4A4861;
 }
 
 .presentation-container .myName {
@@ -62,19 +63,23 @@
 .presentation-container .separator {
 	width: 100%;
 	height: 2px;
-	background-color: black;
+	background-color: #7E7F98;
 }
 
 .presentation-container .infos {
 	font-family: sans-serif;
-	margin : 15px 0 40px 0;
+	margin : 15px 0;
 	display: flex;
 	flex-direction: column;
+	color: #7E7F98;
+}
+
+.presentation-container .infos a {
+	color: #7E7F98;
 }
 
 .presentation-container .avatar {
-	margin: 15px auto;
-	background-color: green;
+	margin: 25px auto;
 	height: 300px;
 	width: 300px;
 	display: flex;
@@ -83,7 +88,7 @@
 
 .presentation-container .image {
 	margin: 15px auto;
-	background-color: yellow;
+	background-color: black;
 	height: 250px;
 	width: 250px;
 
@@ -95,4 +100,61 @@
 	0% { transform: rotate(5deg) }
 	50%{ transform: rotate(-5deg) }
     100%{ transform: rotate(5deg) }
+}
+
+/* EXPERIENCE PART */
+.competences-container {
+	font-family: Cocogoose;
+	color: #4A4861;
+}
+
+.competences-container .myName {
+	font-family: Bebas Neue;
+	font-size: 70px;
+	margin: 0;
+}
+
+.competences-container .infos {
+	font-style: italic;
+	margin: 0 0 45px 0;
+	color: #7E7F98;
+}
+
+.competences-container .competences-icons-container {
+	display: inline-flex;
+}
+
+.competences-container .competences-section-container {
+	cursor: pointer;
+	color: #7E7F98;
+
+	border: 2px solid #7E7F98;
+	padding: 55px 40px;
+	border-radius: 15px;
+	margin: 0 15px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	transition: .5s;
+}
+
+.competences-container .competences-section-container:hover {
+	background-color: #4A4861;
+	border-color: #4A4861;
+	color: white;
+}
+
+.competences-container .competences-explaination-contaiter {
+	margin: 30px auto;
+	max-width: 800px;
+	min-height: 170px;
+	text-align: left;
+	padding: 15px;
+}
+
+.competences-container .competences-explaination-title {
+	color: #7E7F98;
+	margin-bottom: 10px;
 }

@@ -7,7 +7,10 @@ export default function Presentation () {
         <div className="separator" style={{ marginTop: '-53px'}}/>
       </div>
       <div className="infos">
-        <div style={{ fontSize: '25px' }}>06 50 22 58 98</div>
+        <div style={{ fontSize: '25px' }}>
+          <a href="mailto:heloroussel@hotmail.fr">heloroussel@hotmail.fr</a>
+          <div style={{marginTop: '5px'}}>+33 6 50 22 58 98</div>
+        </div>
       </div>
 
       <div className="avatar">

@@ -6,11 +6,13 @@ import './InfosSection.css';
 /* COMPONENT IMPORTS */
 import Rounds from './RoundsSelection.js';
 import Presentation from './Presentation.js';
+import Competences from './Competences.js';
+import Experiences from './Experiences.js';
 
 const diffZones = [
   <div className="info-zone"><Presentation /></div>,
-  <div className="info-zone">BIM</div>,
-  <div className="info-zone">BAM</div>,
+  <div className="info-zone"><Competences /></div>,
+  <div className="info-zone"><Experiences /></div>,
   <div className="info-zone">BOUM</div>,
 ];
 

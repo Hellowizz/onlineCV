@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 const styles = {
     selected : {
-        backgroundColor: 'black'
+        backgroundColor: '#4A4861'
     }
 };
 
