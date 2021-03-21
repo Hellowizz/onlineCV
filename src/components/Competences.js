@@ -30,6 +30,8 @@ export default function Presentation () {
 
   const competenceName = currentShowedCompetence === 0 ? 'Programmation : ' : currentShowedCompetence === 1 ? 'Design :' : currentShowedCompetence === 2 ? 'Personnalité :' : '';
 
+  console.log('')
+
   return (
     <div className="competences-container">
 
@@ -58,10 +60,12 @@ export default function Presentation () {
 
       <div className="competences-explaination-contaiter">
         <div className="competences-explaination-title">{competenceName}</div>
-        <div>
-          {explanations[currentShowedCompetence].main}
-          {explanations[currentShowedCompetence].more}
-        </div>
+        {currentShowedCompetence !== -1 &&
+          <div>
+            {explanations[currentShowedCompetence].main}
+            {explanations[currentShowedCompetence].more}
+          </div>
+        }
       </div>
 
     </div>

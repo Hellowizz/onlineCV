@@ -29,7 +29,6 @@ const styleTransition = (id) => {
 export default function InfosSection() {
   const zonesLength = diffZones.length - 1;
   const [currentSectionId, setCurrentSectionId] = useState(0);
-  const [seconds, setSeconds] = useState(0);
   const [lastUpdate, setLastUpdate] = useState(Date.now());
   const [scrollY, setScrollY] = useState(0);
 
@@ -57,7 +56,7 @@ export default function InfosSection() {
     }
     setScrollY(0);
     if(dt>700) setLastUpdate(now);
-  },[scrollY])
+  },[scrollY, currentSectionId, zonesLength, lastUpdate])
 
   const zones = diffZones.map((zone, id) => (
             <div style={{ width: '100%', height: '100%' }} key={id}>{zone}</div>

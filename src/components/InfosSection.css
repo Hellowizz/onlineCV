@@ -53,6 +53,7 @@
 .presentation-container {
 	font-family: Cocogoose;
 	color: #4A4861;
+	font-weight: 400;
 }
 
 .presentation-container .myName {
@@ -76,6 +77,8 @@
 
 .presentation-container .infos a {
 	color: #7E7F98;
+	font-family: Cocogoose;
+	font-weight: 400;
 }
 
 .presentation-container .avatar {
@@ -102,10 +105,11 @@
     100%{ transform: rotate(5deg) }
 }
 
-/* EXPERIENCE PART */
+/* COMPETENCES PART */
 .competences-container {
 	font-family: Cocogoose;
 	color: #4A4861;
+	font-weight: 400;
 }
 
 .competences-container .myName {
@@ -157,4 +161,36 @@
 .competences-container .competences-explaination-title {
 	color: #7E7F98;
 	margin-bottom: 10px;
+}
+
+/* EXPERIENCES PART */
+.experiences-container {
+	font-family: Cocogoose;
+	font-weight: 400;
+	color: #4A4861;
+}
+
+.experiences-container .myName {
+	font-family: Bebas Neue;
+	font-size: 70px;
+}
+
+.experiences-container .experience-title {
+	font-family: Bebas Neue;
+	font-size: 50px;
+	text-align: left;
+	margin-top: 10px;
+}
+
+.experiences-container .experience-subtitle {
+	text-align: left;
+	color: #7E7F98;
+
+	margin-top: 10px;
+	margin-left: 40px;
+}
+
+.experiences-container .experience-subtitle a {
+	font-style: italic;
+	color: #7E7F98;
 }

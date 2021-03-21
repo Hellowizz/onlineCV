@@ -6,10 +6,6 @@ export default function DrawingSection({tabImgs, duration}) {
   const [timeAtTransition, setTimeAtTransition] = useState(0);
   const [imgIsInTransition, setImgIsInTransition] = useState(false);
 
-  function reset() {
-    setSeconds(0);
-  }
-
   useEffect(() => {
     let interval = null;
 

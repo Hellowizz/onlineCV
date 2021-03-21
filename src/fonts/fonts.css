@@ -4,3 +4,10 @@
     font-weight: 400;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'cocogoose';
+    src: url('./Cocogoose-Bold.ttf');
+    font-weight: 600;
+    font-style: normal;
+}
