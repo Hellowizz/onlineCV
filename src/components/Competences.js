@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 /* IMAGES */
 import progIcon from '../img/icons/prog.svg';
@@ -26,11 +26,9 @@ const explanations = [
 ];
 
 export default function Presentation () {
-  const [currentShowedCompetence, setcurrentShowedCompetence] = useState(-1);
+  const [currentShowedCompetence, setcurrentShowedCompetence] = useState(0);
 
   const competenceName = currentShowedCompetence === 0 ? 'Programmation : ' : currentShowedCompetence === 1 ? 'Design :' : currentShowedCompetence === 2 ? 'Personnalité :' : '';
-
-  console.log('')
 
   return (
     <div className="competences-container">

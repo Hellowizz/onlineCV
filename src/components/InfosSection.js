@@ -8,12 +8,15 @@ import Rounds from './RoundsSelection.js';
 import Presentation from './Presentation.js';
 import Competences from './Competences.js';
 import Experiences from './Experiences.js';
+import Formation from './Formation.js';
+import Portfolio from './Portfolio.js';
 
 const diffZones = [
   <div className="info-zone"><Presentation /></div>,
   <div className="info-zone"><Competences /></div>,
   <div className="info-zone"><Experiences /></div>,
-  <div className="info-zone">BOUM</div>,
+  <div className="info-zone"><Formation /></div>,
+  <div className="info-zone"><Portfolio /></div>
 ];
 
 const styleTransition = (id) => {
@@ -66,7 +69,7 @@ export default function InfosSection() {
     <div style={{ height: '100%' }}>
       <div style={{ display: 'block', height: '100%', transform: styleTransition(currentSectionId), transition: '.7s'}}>{zones}</div>
       <div className="stepper-rouds">
-        <Rounds idSelected={currentSectionId} changeIdSelected={setCurrentSectionId}/>
+        <Rounds zones={diffZones} idSelected={currentSectionId} changeIdSelected={setCurrentSectionId}/>
       </div>
     </div>
   );

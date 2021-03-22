@@ -6,13 +6,11 @@ const styles = {
     }
 };
 
-export default function RoundSelection({idSelected, changeIdSelected}) {
+export default function RoundSelection({zones, idSelected, changeIdSelected}) {
+  const rounds = zones.map((z, id) => <div className="round" key={id} onClick={() => changeIdSelected(id)} style={idSelected === id ? styles.selected : null}/>);
   return (
     <div>
-        <div className="round" onClick={() => changeIdSelected(0)} style={idSelected === 0 ? styles.selected : null}/>
-        <div className="round" onClick={() => changeIdSelected(1)} style={idSelected === 1 ? styles.selected : null}/>
-        <div className="round" onClick={() => changeIdSelected(2)} style={idSelected === 2 ? styles.selected : null}/>
-        <div className="round" onClick={() => changeIdSelected(3)} style={idSelected === 3 ? styles.selected : null}/>
+        {rounds}
     </div>
   );
 };

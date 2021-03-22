@@ -170,14 +170,27 @@
 	color: #4A4861;
 }
 
-.experiences-container .myName {
+.experiences-container .title {
 	font-family: Bebas Neue;
 	font-size: 70px;
 }
 
+.experiences-container .experiences-wrapper {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+}
+
+.experiences-container .experience-wrapper {
+	display: flex;
+	flex-direction: column;
+	max-width: 350px;
+	overflow-wrap: break-word;
+}
+
 .experiences-container .experience-title {
 	font-family: Bebas Neue;
-	font-size: 50px;
+	font-size: 40px;
 	text-align: left;
 	margin-top: 10px;
 }
@@ -185,12 +198,38 @@
 .experiences-container .experience-subtitle {
 	text-align: left;
 	color: #7E7F98;
+	font-size: 20px;
 
 	margin-top: 10px;
-	margin-left: 40px;
+	margin-right: 30px;
+	padding: 5px;
 }
 
 .experiences-container .experience-subtitle a {
 	font-style: italic;
 	color: #7E7F98;
+}
+
+/* PORTFOLIO PART */
+
+.portfolio-container {
+	font-family: Cocogoose;
+	font-weight: 400;
+	color: #4A4861;
+}
+
+.portfolio-container .title {
+	font-family: Bebas Neue;
+	font-size: 70px;
+}
+
+.portfolio-container .projects-container {
+	display: inline-flex;
+}
+
+.portfolio-container .project {
+	border: 2px solid #7E7F98;
+	padding: 55px 40px;
+	border-radius: 15px;
+	margin: 0 15px;
 }

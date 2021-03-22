@@ -24,7 +24,7 @@ export default function DrawingSection({tabImgs, duration}) {
     interval = setInterval(() => {
     	setSeconds(seconds => seconds + 1);}, 1000);
     return () => clearInterval(interval);
-  }, [seconds, currentImgId, timeAtTransition, imgIsInTransition]);
+  }, [seconds, currentImgId, timeAtTransition, imgIsInTransition, duration, tabImgs]);
 
   return (
     <div className="drawing-section-container">
