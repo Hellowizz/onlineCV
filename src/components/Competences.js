@@ -25,7 +25,7 @@ const explanations = [
    more : <div/>}
 ];
 
-export default function Presentation () {
+export default function Competences () {
   const [currentShowedCompetence, setcurrentShowedCompetence] = useState(0);
 
   const competenceName = currentShowedCompetence === 0 ? 'Programmation : ' : currentShowedCompetence === 1 ? 'Design :' : currentShowedCompetence === 2 ? 'Personnalité :' : '';
@@ -57,7 +57,7 @@ export default function Presentation () {
       </div>
 
       <div className="competences-explaination-contaiter">
-        <div className="competences-explaination-title">{competenceName}</div>
+        <div className="competences-explaination-title" data-testid="competence-name">{competenceName}</div>
         {currentShowedCompetence !== -1 &&
           <div>
             {explanations[currentShowedCompetence].main}

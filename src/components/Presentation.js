@@ -3,7 +3,7 @@ export default function Presentation () {
     <div className="presentation-container">
       <div>
         <div className="separator" style={{ marginBottom: '-45px'}}/>
-        <h1 className="myName">HELOISE ROUSSEL</h1>
+        <h1 className="myName" data-testid="heloise">HELOISE ROUSSEL</h1>
         <div className="separator" style={{ marginTop: '-53px'}}/>
       </div>
       <div className="infos">
