@@ -29,7 +29,7 @@ const styleTransition = (id) => {
     return 'translateY(' + transform + ')';
 };
 
-export default function InfosSection() {
+export default function InfosSection({isTabletOrMobile}) {
   const zonesLength = diffZones.length - 1;
   const [currentSectionId, setCurrentSectionId] = useState(0);
   const [lastUpdate, setLastUpdate] = useState(Date.now());
@@ -61,16 +61,15 @@ export default function InfosSection() {
     if(dt>700) setLastUpdate(now);
   },[scrollY, currentSectionId, zonesLength, lastUpdate])
 
-  const zones = diffZones.map((zone, id) => (
-            <div style={{ width: '100%', height: '100%' }} key={id}>{zone}</div>
-        ));
+  const zones = diffZones.map((zone, id) => (<div style={{ width: '100%', height: '100%' }} key={id}>{zone}</div>));
 
   return (
     <div style={{ height: '100%' }}>
-      <div style={{ display: 'block', height: '100%', transform: styleTransition(currentSectionId), transition: '.7s'}}>{zones}</div>
-      <div className="stepper-rouds">
+      {!isTabletOrMobile && <div style={{ display: 'block', height: '100%', transform: styleTransition(currentSectionId), transition: '.7s'}}>{zones}</div>}
+      {!isTabletOrMobile && <div className="stepper-rouds">
         <Rounds zones={diffZones} idSelected={currentSectionId} changeIdSelected={setCurrentSectionId}/>
-      </div>
+      </div>}
+      {isTabletOrMobile && zones}
     </div>
   );
 };

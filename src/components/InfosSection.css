@@ -13,6 +13,7 @@
 	align-items: center;
 
 	color : black;
+	background-color: white;
 }
 
 .stepper-rouds {
@@ -91,9 +92,8 @@
 
 .presentation-container .image {
 	margin: 15px auto;
-	background-color: black;
-	height: 250px;
-	width: 250px;
+	height: 330px;
+	width: 330px;
 
 	animation: rotate 1000ms linear infinite;
 	transform: rotate(5deg);
@@ -229,8 +229,8 @@
 
 .portfolio-container .project {
 	border: 2px solid #7E7F98;
-	width: 300px;
-	height: 300px;
+	width: 250px;
+	height: 250px;
 	padding: 55px 40px;
 	border-radius: 15px;
 	margin: 0 15px;
@@ -245,4 +245,13 @@
 	color: #7E7F98;
 	font-style: italic;
 	font-size: 17px;
+}
+
+.portfolio-container .project-details-more {
+	margin-top: 3px;
+	color: #7E7F98;
+	font-style: italic;
+	font-size: 15px;
+	font-family: calibri;
+	font-weight: 600;
 }

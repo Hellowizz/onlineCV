@@ -1,3 +1,5 @@
+import ProfilePic from '../img/Me.png';
+
 export default function Presentation () {
   return (
     <div className="presentation-container">
@@ -14,7 +16,9 @@ export default function Presentation () {
       </div>
 
       <div className="avatar">
-        <div className="image"/>
+        <div className="image">
+          <img alt="me-drawing" src={ProfilePic} style={{ height: '100%'}}/>
+        </div>
       </div>
 
       <div>DÉVELOPPEUSE WEB</div>

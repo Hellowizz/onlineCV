@@ -28,7 +28,7 @@ export default function Experiences () {
       <div className="experience-wrapper">
         <div className="experience-title">IMAC <span style={{ fontSize: '33px', marginLeft: '5px' }}>[2015- 2018]</span></div>
         <div className="experience-subtitle">
-          <div style={{ fontWeight: '600', marginBottom: '5px' }}>École d’Ingénieur Image Multimédia Audiovisuel et Communication à l’université Paris Est Marne-la-vallée</div>
+          <div style={{ fontWeight: '600', marginBottom: '5px' }}>École d’Ingénieur alliant informatique et arts à l’université Paris Est Marne-la-vallée</div>
           <img alt="gustave-logo" src={GustaveLogo} style={{ height: '40px', marginTop: '15px'}}/>
         </div>
       </div>

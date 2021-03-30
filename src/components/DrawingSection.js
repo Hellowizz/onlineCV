@@ -29,7 +29,10 @@ export default function DrawingSection({tabImgs, duration}) {
   return (
     <div className="drawing-section-container">
       <div className="drawings-container" style={{ background : 'center/cover no-repeat url(.' + tabImgs[currentImgId] + ')', opacity : imgIsInTransition ? '0' : '.3' }} />
-      <div className="art-website"><a href="http://hellowizz.fr/">hellowizz.fr</a></div>
+      <div className="art-website">
+        <div style={{ fontStyle: 'italic', color: 'white'}}>Et je dessine beaucoup</div>
+        <a href="http://hellowizz.fr/">hellowizz.fr</a>
+      </div>
   </div>
   );
 };

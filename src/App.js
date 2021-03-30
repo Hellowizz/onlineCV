@@ -24,12 +24,10 @@ const tabOfImgs = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, 
 function App() {
 	const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
 
-	console.log('isTabletOrMobile : ' + isTabletOrMobile);
-
 	return (
 		<div className="App">
 		    <div className="infos-container" style={{ width : isTabletOrMobile ? '100%' : '67%'}}>
-					<InfosSection/>
+					<InfosSection isTabletOrMobile={isTabletOrMobile}/>
 				</div>
 		    {!isTabletOrMobile && <DrawingSection tabImgs={tabOfImgs} duration={6}/>}
 		</div>
